@@ -1,0 +1,32 @@
+<div style="clear: both">
+  <div style="float: left; width: 100px; height: 10%">
+    <img [src]="image_url" style="width: 200px; height: 200px" />
+  </div>
+
+  <div style="width: 50%; height: 10%; padding-left: 250px">
+    <h3>
+      {{ title }}
+    </h3>
+
+    <h4>
+      {{ name }}
+    </h4>
+    <p>{{ bio }}</p>
+    <h4>want to work with</h4>
+    <div [hidden]="hideVoteIcon" ng-hide="showVoteIcon">
+      <a (click)="vote()"
+        ><img
+          src="../../assets/thumbs-up.svg"
+          ng-show="showVoteIcon"
+          width="20"
+          height="50"
+      /></a>
+    </div>
+    <br />
+    <p>{{ numberOfVotes }} have said yes</p>
+  </div>
+
+  <br />
+  <br />
+  <br />
+</div>
