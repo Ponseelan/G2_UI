@@ -1,0 +1,20 @@
+a.disabled {
+  cursor: not-allowed;
+  text-decoration: underline;
+}
+
+img.imageFile {
+  cursor: not-allowed;
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
+    brightness(118%) contrast(119%);
+}
+
+#icon-thumbs-up {
+  fill: brown;
+  color: blue;
+}
+/* div.blockedImage {
+  background-color: red;
+  -webkit-mask: url(../../assets/thumbs-up.svg);
+  mask: url(../../assets/thumbs-up.svg);
+} */
